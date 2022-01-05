@@ -1,0 +1,33 @@
+<!--pages/dailyRecommend/dailyRecommend.wxml-->
+<view class="recommendContainer">
+  <!-- 头部 -->
+  <view class="header">
+    <image src="/static/images/recommendSong/recommendSong.jpg"></image>
+    <view class="date">
+      <text class="day">{{date.month}} / </text>
+      <text class="month">{{date.day}}</text>
+    </view>
+  </view>
+
+  <!-- 列表区域 -->
+  <view class="ListContainer">
+    <view class="listHeader">
+      <text>播放全部</text>
+      <text>多选</text>
+    </view>
+    <!-- 歌曲 -->
+    <scroll-view scroll-y class="musicScroll">
+      <!-- 歌曲项 -->
+      <view class="musicItem" wx:for="{{reMusic}}" wx:key="id" bindtap="toSong" id="{{item.id}}">
+        <!-- 图片 -->
+        <image src="{{item.album.blurPicUrl}}"></image>
+        <!-- 歌曲信息 -->
+        <view class="musicInfo">
+          <view class="musicName">{{item.album.name}}</view>
+          <view class="author">{{item.artists[0].name}}</view>
+        </view>
+        <text class="iconfont icon-gengduo"></text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

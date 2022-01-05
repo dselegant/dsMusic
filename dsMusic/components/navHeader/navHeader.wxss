@@ -1,0 +1,28 @@
+/* components/navHeader/navHeader.wxss */
+/* 推荐标题 */
+ .title{
+  font-size: 32rpx;
+  line-height: 40rpx;
+  color: #666;
+}
+
+/* 介绍 */
+.recommendBrief{
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+/* 查看更多 */
+.recommendBrief .more{
+  border: 1rpx solid #333;
+  padding: 10rpx 20rpx;
+  font-size: 26rpx;
+  border-radius: 30rpx;
+  line-height: 30rpx;
+}
+
+/* 箭头 */
+.more .jiantou{
+  font-size: 32rpx;
+}

@@ -1,0 +1,11 @@
+<!--components/navHeader/navHeader.wxml-->
+<!-- 标题 -->
+<view class="header">
+  <text class="title">{{title}}</text>
+</view>
+<!-- 介绍 -->
+<view class="recommendBrief">
+  <text>{{brief}}</text>
+  <text class="more">更多<text class="jiantou">></text></text>
+
+</view>

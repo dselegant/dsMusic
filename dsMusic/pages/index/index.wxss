@@ -1,0 +1,125 @@
+/* pages/index/index.wxss */
+/* 轮播图容器 */
+.pad{
+  padding: 0 20rpx;
+}
+
+.banners{
+  width: 100%;
+  height: 300rpx;
+}
+
+/* 轮播图图片 */
+.banners image{
+  width: 100%;
+  height: 100%;
+}
+
+/* 导航图标容器 */
+.navContainer{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+
+/* 每一个导航图标项 */
+.navContainer .navItem{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+}
+
+/* 图标字体 */
+/* 因为上面设置了flex，弹性元素都会变成block */
+.navItem .iconfont{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: rgb(240, 19, 19);
+  font-size: 50rpx;
+  color: #fff;
+  margin: 20rpx 0;
+}
+
+/* 图标字体下面的文字 */
+.navItem text{
+  font-size: 26rpx;
+}
+
+/* 内容区容器 */
+.recommendContent{
+  margin-top: 15rpx;
+  height: 260rpx;
+  display: flex;
+}
+
+/* 每个音乐项 */
+.recommendContent .recontentItem{
+  width: 200rpx;
+  margin-right: 20rpx;
+}
+
+/* 音乐图片 */
+.recontentItem image{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+}
+
+/* 音乐名字介绍 */
+.recontentItem text{
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; /*设置对其模式*/
+  -webkit-line-clamp: 2; /*设置多行的行数*/
+}
+
+/* 排行榜容器 */
+.rankListContent{
+  height: 400rpx;
+  display: flex;
+}
+
+/* 排行榜名字 */
+.rlcontentItem .title{
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+
+/* 排行榜 */
+.musicItem{
+  display: flex;
+  align-items:center;
+  padding-right: 150rpx;
+  margin-bottom: 10rpx;
+}
+
+/* 排行榜图片 */
+.rlcontentItem .musicItem image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 6rpx;
+}
+
+/* 排行榜排名数字 */
+.musicItem .count{
+  width: 60rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+/* 排行榜音乐名 */
+.musicItem .musicName{
+  height: 100rpx;
+  line-height: 100rpx;
+  max-width: 400rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

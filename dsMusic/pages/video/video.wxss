@@ -1,0 +1,140 @@
+/* pages/video/video.wxss */
+.pad{
+  padding: 0 20rpx;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    margin-bottom: 20rpx;
+}
+/* 搜索框样式 */
+.header .search{
+  border: 1rpx solid #eee;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 60rpx;
+  color: #d43c33;
+  font-size: 26rpx;
+
+}
+
+/* 设置搜索框两边图片 */
+.videoContainer .header image{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+/* 视频导航 */
+.navScroll{
+  display: flex;
+  white-space: nowrap;
+  height: 58rpx;
+}
+
+/* 导航项 */
+.navScroll .navItem {
+  /* padding: 0 30rpx; */
+  padding-left: 5px;
+  padding-right: 30rpx;
+  font-size: 28rpx;
+  height: 58rpx;
+  line-height: 58rpx;
+}
+
+/* 导航内容 */
+.navScroll .navContent {
+  height: 50rpx;
+}
+
+.navItem .active {
+  border-bottom: 2rpx solid #d43c33;
+}
+
+/* 视频区 */
+.videoScroll{
+  margin-top: 10rpx;
+  /* text-align: center; */
+  height: calc(100vh - 152rpx);
+}
+
+.videoItem{
+  padding: 0 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videoScroll video,
+.videoScroll image{
+  width: 92vw;
+  height: 450rpx;
+}
+
+.videoItem .common {
+  width: 100%;
+  height: 360rpx;
+  border-radius: 10rpx;
+}
+
+
+
+
+.videoItem .content {
+  font-size: 28rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  max-width: 500rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  border-top: 1rpx solid #eee;
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .avatar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.footer  .nickName {
+  font-size: 26rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+
+.footer .comments_praised {
+  float: right;
+}
+
+.comments_praised .btn {
+  display: inline;
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.comments_praised .btn:after {
+  border: none;
+}
+
+.comments_praised .item {
+  margin-left: 50rpx;
+  position: relative;
+}
+
+.comments_praised .item .count {
+  position: absolute;
+  top: -20rpx;
+  font-size: 20rpx;
+}
